@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { SuccessAlertComponent } from "./success-alert/success-alert.component";
+import { WarningAlertComponent } from "./warning-alert/warning-alert.component";
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [SuccessAlertComponent, WarningAlertComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
