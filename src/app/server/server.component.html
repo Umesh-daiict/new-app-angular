@@ -1,1 +1,1 @@
-<p>Server with ID {{serverId}} is {{getCorrectStatus() }} </p>
+<p [ngClass]="getCorrectStatus() == 'offine'? 'under':''" [ngStyle]="{color: getCorrectStatus() == 'offine'? 'red':'green'}">Server with ID {{serverId}} is {{getCorrectStatus() }} </p>
