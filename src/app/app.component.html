@@ -1,1 +1,7 @@
-<h1>Umesh Savaliya</h1>
+<div class="container">
+  <button class="btn btn-primary" (click)="handleShowDetails()">Display Details</button>
+    <p *ngIf="showData">You have seen what you should not</p>
+    <ol >
+        <li *ngFor="let ck of clicksAt;let id = index" [ngClass]="id > 4?'more-then-five' :''">{{ck}}</li>
+    </ol>
+</div>
